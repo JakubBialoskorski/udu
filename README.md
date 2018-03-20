@@ -8,3 +8,8 @@ Usage: download and run with
 ```
 sh update.sh
 ```
+
+Example CRON task on Raspbian with logging to file:
+```
+00 9 * * * /home/pi/update.sh > /home/pi/update_sh.log 2>&1
+```
