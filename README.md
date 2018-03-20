@@ -11,5 +11,8 @@ sh update.sh
 
 Example CRON task on Raspbian with logging to file:
 ```
+chmod +x update.sh
+```
+```
 00 9 * * * /home/pi/update.sh > /home/pi/update_sh.log 2>&1
 ```
