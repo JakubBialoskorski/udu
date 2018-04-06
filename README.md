@@ -9,10 +9,10 @@ Usage: download and run with
 sh update.sh
 ```
 
-Example CRON task on Raspbian with logging to file:
+Example CRON task on Raspbian with logging to file (9AM daily):
 ```
 chmod +x update.sh
 ```
 ```
-00 9 * * * /home/pi/update.sh > /home/pi/update_sh.log 2>&1
+0 9 * * * $HOME/update.sh > $HOME/update_sh.log 2>&1
 ```
