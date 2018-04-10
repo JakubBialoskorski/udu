@@ -14,5 +14,5 @@ Example CRON task on Raspbian with logging to file (9AM daily):
 chmod +x update.sh
 ```
 ```
-0 9 * * * $HOME/update.sh > $HOME/update_sh.log 2>&1
+0 9 * * * $HOME/update.sh > $HOME/updatelog 2>&1
 ```
