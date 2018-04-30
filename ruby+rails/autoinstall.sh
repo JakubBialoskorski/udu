@@ -10,5 +10,6 @@ curl -L get.rvm.io | bash -s stable --rails
 source ~/.rvm/scripts/rvm
 gem install execjs
 sudo apt-get install nodejs
+source /home/pi/.rvm/scripts/rvm
 ruby -v
 rails -v
