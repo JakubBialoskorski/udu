@@ -8,7 +8,7 @@ sudo apt-get install -y git zlib1g-dev subversion openssl libreadline6-dev git-c
 curl -L get.rvm.io | bash -s stable --rails
 source ~/.rvm/scripts/rvm
 gem install execjs
-sudo apt-get install nodejs
+sudo apt-get install -y nodejs
 source /home/pi/.rvm/scripts/rvm
 ruby -v
 rails -v
