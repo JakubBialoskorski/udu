@@ -1,6 +1,7 @@
 # Install Ruby & Rails automatically on Raspberry Pi
 
 #!/bin/bash
+git pull
 sudo apt-get update
 sudo apt-get install -y curl
 command curl -sSL https://rvm.io/mpapis.asc | gpg --import -
