@@ -1,0 +1,9 @@
+---
+- name: Running update & upgrades on hosts
+  become: yes
+  hosts: all
+  tasks:
+    - name: Update packages list
+      apt: update_cache=yes
+    - name: Upgrade packages
+      apt: upgrade=dist
