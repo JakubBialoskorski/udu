@@ -1,0 +1,10 @@
+---
+- name: Preparing Ubuntu box
+  become: yes
+  hosts: all
+  tasks:
+    - name: Install list of packages
+      apt: name={{item}} state=installed
+      with_items:
+           - screen
+           - git
