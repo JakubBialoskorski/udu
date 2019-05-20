@@ -7,3 +7,8 @@
       apt: update_cache=yes
     - name: Upgrade packages
       apt: upgrade=dist
+    - name: Check which packages request for reboot
+      shell: more /var/run/reboot-required.pkgs
+      register: shell
+    - name: Print output
+      debug: msg="{{ shell.stdout }}"
