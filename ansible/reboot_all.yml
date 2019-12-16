@@ -3,3 +3,4 @@
   tasks:
      - name: Reboot
        reboot:
+         reboot_timeout: 240
