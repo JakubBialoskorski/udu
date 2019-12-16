@@ -1,6 +1,7 @@
 ---
 - hosts: all
   tasks:
-     - name: Reboot
-       reboot:
-         reboot_timeout: 240
+    - name: Reboot
+      shell: "reboot"
+      async: 1
+      poll: 0
