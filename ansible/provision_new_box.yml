@@ -1,0 +1,14 @@
+---
+- hosts: all
+  tasks:
+    - name: Download telegraf.conf from GitHub
+      get_url:
+        url: https://gist.githubusercontent.com/JakubBialoskorski/533821afefbcbbde6a0edbcf057319f5/raw/7eb27e59d7bfbc5ccea16d1fa5f3f3770d23f6b9/telegraf.conf
+        dest: $HOME/dockerdata/telegraf/telegraf.conf
+    - name: Replace string
+      replace:
+        path: $HOME/dockerdata/telegraf/telegraf.conf
+        regexp: 'REPLACEME'
+        replace: '157.245.78.85'
+
+# don't forget tu run dockerized telegraf after that
