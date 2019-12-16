@@ -2,6 +2,6 @@
 - hosts: all
   tasks:
     - name: Reboot
-      shell: "reboot"
+      shell: "sudo reboot"
       async: 1
       poll: 0
