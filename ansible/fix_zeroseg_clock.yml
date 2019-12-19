@@ -1,0 +1,5 @@
+---
+- hosts: zeroseg-clock
+  tasks:
+    - name: Run clock script manually
+      shell: nohup python /home/pi/GitHub/ZeroSeg/clock.py </dev/null >/dev/null 2>&1 &
