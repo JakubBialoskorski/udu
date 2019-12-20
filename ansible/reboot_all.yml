@@ -1,7 +1,0 @@
----
-- hosts: all
-  tasks:
-    - name: Reboot
-      shell: "sudo reboot"
-      async: 1
-      poll: 0
